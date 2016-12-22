@@ -1,6 +1,31 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
 
+
+ext {
+    bintrayRepo = 'myLib'
+    bintrayName = 'mylittlelibrary'   // Has to be same as your library module name
+
+    publishedGroupId = 'com.github.mylittlelibrary'
+    libraryName = 'mylittlelibrary'
+    artifact = 'mylittlelibrary'     // Has to be same as your library module name
+
+    libraryDescription = 'Android Library to make any text into Toast with Awesome prepended to the text'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/HiteshKumarMatnani/myLib'
+    gitUrl = 'https://github.com/HiteshKumarMatnani/myLib.git'
+    githubRepository= 'HiteshKumarMatnani/myLib'
+
+    libraryVersion = '1.0'
+
+    developerId = 'HiteshKumarMatnani'
+    developerName = 'Hitesh Kumar Matnani'
+    developerEmail = 'hiteshkumarmatnani@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 25
